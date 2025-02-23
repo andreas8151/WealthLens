@@ -1,0 +1,88 @@
+WealthLens/
+│── src/
+│   ├── components/         # Reusable UI components
+│   │   ├── ui/             # Generic UI components (Button, Card, etc.)
+│   │   ├── charts/         # Investment/Savings charts
+│   │   ├── forms/          # Input forms
+│   │   ├── navigation/     # Navigation stack/tab components
+│   │   ├── screens/        # App screens (Home, Dashboard, Settings)
+│   │   ├── layout/         # App-wide layouts & wrappers
+│   │   └── index.ts        # Export all components
+│   │
+│   ├── hooks/              # Custom React hooks
+│   │   ├── useAuth.ts      # Authentication logic
+│   │   ├── useInvestments.ts # Investment data hook
+│   │   ├── useSavings.ts   # Savings tracking
+│   │   ├── useFetch.ts     # API fetching
+│   │   └── index.ts
+│   │
+│   ├── context/            # Global state/context API
+│   │   ├── AuthContext.ts  # Authentication context
+│   │   ├── UserContext.ts  # User profile state
+│   │   ├── ThemeContext.ts # Dark/Light theme state
+│   │   └── index.ts
+│   │
+│   ├── services/           # External API & business logic
+│   │   ├── api.ts          # Fetch wrapper (Axios/Fetch)
+│   │   ├── authService.ts  # Authentication API calls
+│   │   ├── investmentService.ts  # API for investments
+│   │   ├── savingsService.ts     # API for savings
+│   │   └── index.ts
+│   │
+│   ├── utils/              # Helper functions/utilities
+│   │   ├── formatCurrency.ts  # Currency formatting
+│   │   ├── calculateROI.ts    # Return on Investment calculations
+│   │   ├── dateUtils.ts       # Date format helpers
+│   │   ├── storage.ts         # AsyncStorage wrappers
+│   │   └── index.ts
+│   │
+│   ├── assets/             # Static assets (icons, images)
+│   │   ├── icons/          # Custom icons
+│   │   ├── images/         # App images
+│   │   ├── fonts/          # Custom fonts
+│   │   └── svgs/           # SVG assets
+│   │
+│   ├── styles/             # Global styles
+│   │   ├── theme.ts        # Light/Dark themes
+│   │   ├── globalStyles.ts # Global styles for the app
+│   │   └── index.ts
+│   │
+│   ├── navigation/         # App navigation (React Navigation)
+│   │   ├── StackNavigator.tsx   # Stack navigation config
+│   │   ├── TabNavigator.tsx     # Bottom tab navigator
+│   │   ├── DrawerNavigator.tsx  # Side drawer navigation
+│   │   └── index.ts
+│   │
+│   ├── screens/            # App screens/pages
+│   │   ├── HomeScreen.tsx      # Home screen
+│   │   ├── DashboardScreen.tsx # Investment dashboard
+│   │   ├── SavingsScreen.tsx   # Savings overview
+│   │   ├── SettingsScreen.tsx  # Settings
+│   │   ├── AuthScreen.tsx      # Login/Register screen
+│   │   ├── ProfileScreen.tsx   # User profile
+│   │   └── index.ts
+│   │
+│   ├── store/              # Redux/Zustand store (if needed)
+│   │   ├── reducers/
+│   │   ├── actions/
+│   │   ├── store.ts
+│   │   ├── index.ts
+│   │
+│   ├── App.tsx             # Entry point of the app
+│   ├── main.tsx            # Alternative main entry (Expo)
+│   ├── index.tsx           # Root file
+│
+│── backend/                # (If you have a Node.js/Express backend)
+│   ├── controllers/        # API Controllers
+│   ├── routes/             # API Routes
+│   ├── models/             # Database models
+│   ├── services/           # Business logic
+│   ├── config/             # Config files
+│   ├── index.ts            # Main backend entry
+│
+│── .gitignore              # Git ignored files
+│── package.json            # Dependencies
+│── tsconfig.json           # TypeScript config
+│── app.json                # Expo config
+│── babel.config.js         # Babel config
+│── README.md               # Documentation
